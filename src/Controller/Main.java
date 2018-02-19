@@ -1,6 +1,9 @@
 package Controller;
 
+
 public class Main {
-    RootController rootController = new RootController;
-    rootController.run();
+    public static void main(String[] args) {
+         RootController rootController = new RootController();
+        rootController.run();
+    }
 }
