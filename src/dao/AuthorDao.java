@@ -1,4 +1,15 @@
 package dao;
 
-public class AuthorDao {
+import java.sql.Connection;
+
+public class AuthorDao{
+    private DaoDBConnection dbConnection = DaoDBConnection.getInstance();
+    private Connection connection = null;
+
+    public AuthorDao(){
+        connection = dbConnection.getConnection();
+    }
+
+
+
 }
